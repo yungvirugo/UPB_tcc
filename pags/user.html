@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.P.B - Unidos Pelo Bem</title>
+    <link rel="icon" href="/Assets/img/Design_sem_nome-removebg-preview (1).png">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo"><img src="/Assets/img/Unidos_Pelo_Bem-removebg-preview.png" alt="" class="logo principal">
+        </div>
+        <div class="button dois">
+            <div class="button base">
+
+                <a href="/index.html">
+                    <p class="menu option" id="Mouse">Inicio</p>
+                </a>
+
+
+                <button class="menu option" id="openModalButton">Doadores</button>
+
+
+
+                <button class="menu option" id="Mouse">O.N.G's</button>
+
+
+                <a href="/pags/about.html">
+                    <p class="menu option" id="Mouse">Sobre-Nós</p>
+                </a>
+
+            </div>
+        </div>
+        <div class="button media dois">
+            <div class="media base">
+
+                <a href=""><button class="redes"><img src="/Assets/img/instagram.png" alt=""></button></a>
+
+                <a href=""><button class="redes"><img src="/Assets/img/twitter (2).png" alt=""></button></a>
+
+                <a href=""><button class="redes"><img src="/Assets/img/facebook.png" alt=""></button></a>
+
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container menu">
+        <div class="profile user">
+            <div class="profile photo">
+                <img src="/Assets/img/799036bdda07f7686bc5e3274a418b8f.webp" alt="" class="photo base">
+            </div>
+            <div class="title v1">
+                <p>Yasmin Carvalho</p>
+            </div>
+        </div>
+
+        <div class="formulario user">
+
+            <div class="centralizar">
+                <form class="user" action="roi.php" method="post">
+                    <div class="margi">
+                        <label for="opcao-doacao" class="impor">Selecione a opção de doação:</label>
+                        <select id="opcao-doacao" onchange="atualizarSelecao()" class="sele">
+                            <option value="opcao1">Selecione uma opção</option>
+                            <option value="opcao2">Alimentos</option>
+                            <option value="opcao3">Remédios</option>
+                            <option value="opcao4">Higiene</option>
+                            <option value="opcao5">Roupas</option>
+                        </select>
+                        <br>
+                        <textarea name="ss" id="" cols="30" rows="10" placeholder="Escreva aqui o que irá doar e sua Quantidade.." class="donation datail"></textarea>
+                        <br>
+                        <label for="opcao-ong" class="impor">Selecione a ONG:</label>
+                        <select id="opcao-ong" onchange="atualizarSelecao()" class="sele">
+                            <option value="ong1">Selecione uma opção</option>
+                            <option value="ong2">ASPE</option>
+                            <option value="ong3">Proara – Projeto Araci</option>
+                            <option value="ong4">S.O.Sopão</option>
+                            <option value="ong5">Se Mudando</option>
+                            <option value="ong6"> Helena Dornfeld</option>
+                        </select>
+                    </div>
+
+                    <div class="centralizar">
+                        <div class="text-in">
+                            <div class="centralizar">
+                                <img id="imagem-ong" src="/Assets/img/Design_sem_nome-removebg-preview (1).png"
+                                    alt="Imagem da ONG">
+                            </div>
+                            <br>
+                            <div class="centralizar">
+                                <p id="title-informativo"></p>
+                            </div>
+                            <br>
+                            <div class="centralizar">
+                                <p id="texto-informativo">Escolha a ONG que mais lhe agrada.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="centralizar">
+                        <input type="submit" value="Enviar" class="send user">
+                    </div>
+                    <br>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/Assets/js/script.js"></script>
+</body>
+
+</html>
